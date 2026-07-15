@@ -1,0 +1,41 @@
+0 verbose cli /opt/homebrew/Cellar/node/26.4.0/bin/node /opt/homebrew/lib/node_modules/npm/bin/npm-cli.js
+1 info using npm@11.17.0
+2 info using node@v26.4.0
+3 silly config load:file:/opt/homebrew/lib/node_modules/npm/npmrc
+4 silly config load:file:/Volumes/S980P-1/Mini4/Documents/Project/my-portfolio/frontend/.npmrc
+5 silly config load:file:/Volumes/S980P-1/Mini4/Documents/Project/my-portfolio/.fakehome/.npmrc
+6 silly config load:file:/opt/homebrew/etc/npmrc
+7 verbose title npm exec create-next-app@latest . --typescript --no-tailwind --eslint --app --src-dir false --import-alias @/* --use-npm --yes
+8 verbose argv "exec" "--yes" "--" "create-next-app@latest" "." "--typescript" "--no-tailwind" "--eslint" "--app" "--src-dir" "false" "--import-alias" "@/*" "--use-npm" "--yes"
+9 verbose logfile logs-max:10 dir:/Volumes/S980P-1/Mini4/Documents/Project/my-portfolio/.fakehome/.npm/_logs/2026-07-15T19_16_50_222Z-
+10 verbose logfile /Volumes/S980P-1/Mini4/Documents/Project/my-portfolio/.fakehome/.npm/_logs/2026-07-15T19_16_50_222Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4395630592 maxSize:1098907648 maxEntrySize:549453824
+13 http fetch GET 200 https://registry.npmjs.org/npm 249ms
+14 http fetch GET 200 https://registry.npmjs.org/create-next-app 311ms (cache miss)
+15 silly packumentCache heap:4395630592 maxSize:1098907648 maxEntrySize:549453824
+16 silly packumentCache heap:4395630592 maxSize:1098907648 maxEntrySize:549453824
+17 silly idealTree buildDeps
+18 silly fetch manifest create-next-app@16.2.10
+19 silly packumentCache full:https://registry.npmjs.org/create-next-app cache-miss
+20 http fetch GET 200 https://registry.npmjs.org/create-next-app 211ms (cache miss)
+21 silly packumentCache full:https://registry.npmjs.org/create-next-app set size:undefined disposed:false
+22 silly placeDep ROOT create-next-app@16.2.10 OK for:  want: 16.2.10
+23 silly reify moves {}
+24 silly audit bulk request { 'create-next-app': [ '16.2.10' ] }
+25 http cache create-next-app@https://registry.npmjs.org/create-next-app/-/create-next-app-16.2.10.tgz 1ms (cache hit)
+26 silly tarball no local data for create-next-app@https://registry.npmjs.org/create-next-app/-/create-next-app-16.2.10.tgz. Extracting by manifest.
+27 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 44ms
+28 silly audit report {}
+29 http fetch GET 200 https://registry.npmjs.org/create-next-app/-/create-next-app-16.2.10.tgz 76ms (cache miss)
+30 verbose cwd /Volumes/S980P-1/Mini4/Documents/Project/my-portfolio/frontend
+31 verbose os Darwin 25.5.0
+32 verbose node v26.4.0
+33 verbose npm  v11.17.0
+34 notice
+34 notice New major version of npm available! 11.17.0 -> 12.0.1
+34 notice Changelog: https://github.com/npm/cli/releases/tag/v12.0.1
+34 notice To update run: npm install -g npm@12.0.1
+34 notice  { force: true, Symbol(proc-log.meta): true }
+35 verbose exit 0
+36 info ok
