@@ -1,4 +1,5 @@
 import Hero from "@/components/Hero";
+import About from "@/components/About";
 import TechStack from "@/components/TechStack";
 import FeaturedProject from "@/components/FeaturedProject";
 import SubProjects from "@/components/SubProjects";
@@ -17,6 +18,9 @@ export default function Home() {
       <div className="relative z-10 flex flex-col gap-12 pb-24">
         {/* 1. 영웅 영역 (Hero Section) */}
         <Hero />
+        
+        {/* 1.5. About Section */}
+        <About />
         
         {/* 2. 핵심 기술 스택 (Core Tech Stack Highlight) */}
         <TechStack />
