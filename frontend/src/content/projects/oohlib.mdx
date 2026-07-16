@@ -1,0 +1,33 @@
+---
+title: "OOHLIB: Spatial Data Analysis Platform"
+desc: "A comprehensive platform for evaluating Out-Of-Home (OOH) advertising effectiveness using spatial data and ML."
+type: "Project"
+tags: ["Python", "FastAPI", "Next.js", "Geospatial Data", "Docker"]
+featured: true
+---
+
+# OOHLIB: Spatial Data Analysis Platform
+
+Out-Of-Home (OOH) advertising evaluation is historically difficult. This project introduces a data-driven approach to estimate the impact of billboard advertisements based on spatial intelligence and ML.
+
+## The Problem
+Measuring the actual conversion rate or impressions of physical billboards is highly inaccurate compared to digital ads.
+
+## The Solution
+We ingested massive amounts of spatial data, including foot traffic, vehicular movement, and demographic heatmaps, to create a custom ML scoring algorithm.
+
+### Architecture
+- **Backend:** FastAPI for high-performance API endpoints.
+- **Frontend:** Next.js for interactive mapping and dashboards.
+- **Database:** PostgreSQL with PostGIS for spatial queries.
+
+```python
+# Sample API Route
+@router.get("/calculate-ooh-index")
+def get_ooh_index(traffic: int = 1000, match_rate: float = 0.5):
+    result = calculate_index(traffic, match_rate)
+    return {"status": "success", "data": result}
+```
+
+## Business Impact
+By providing granular insights, advertisers could optimize their physical ad spend by 20%, ensuring higher visibility among target demographics.

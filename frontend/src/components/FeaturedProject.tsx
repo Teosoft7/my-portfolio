@@ -1,6 +1,13 @@
 import { ArrowUpRight, GitBranch } from "lucide-react";
+import { getAllPosts } from "@/lib/mdx";
+import Link from "next/link";
 
 export default function FeaturedProject() {
+  const allProjects = getAllPosts("projects");
+  const featured = allProjects.find((p) => p.featured) || allProjects[0];
+
+  if (!featured) return null;
+
   return (
     <section className="py-24 px-6 max-w-6xl mx-auto" id="projects">
       <div className="mb-16 flex flex-col md:flex-row md:items-end justify-between gap-6">
@@ -17,12 +24,11 @@ export default function FeaturedProject() {
           {/* Project Image/Visualizer Placeholder */}
           <div className="relative p-8 lg:p-12 flex items-center justify-center border-b lg:border-b-0 lg:border-r border-white/10 bg-black/20">
             <div className="w-full aspect-video rounded-2xl border border-white/10 bg-gradient-to-tr from-neutral-900 to-neutral-800 shadow-2xl flex items-center justify-center relative overflow-hidden group-hover:scale-[1.02] transition-transform duration-500">
-              {/* Abstract representation of data/map */}
               <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-40 mix-blend-overlay"></div>
               <div className="absolute inset-0 bg-gradient-to-t from-neutral-900 via-neutral-900/40 to-transparent"></div>
               <div className="text-center z-10">
                 <p className="text-sm tracking-widest text-blue-400 font-mono uppercase mb-2">Interactive Map</p>
-                <h4 className="text-2xl font-bold text-white">OOH Advertising Impact</h4>
+                <h4 className="text-2xl font-bold text-white">{featured.title}</h4>
               </div>
             </div>
           </div>
@@ -34,16 +40,14 @@ export default function FeaturedProject() {
               <span className="px-3 py-1 text-xs font-semibold rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/20">Full Stack</span>
             </div>
             
-            <h3 className="text-3xl lg:text-4xl font-bold text-white mb-6">OOHLIB: Spatial Data Analysis Platform</h3>
+            <h3 className="text-3xl lg:text-4xl font-bold text-white mb-6">{featured.title}</h3>
             
             <p className="text-neutral-400 mb-8 leading-relaxed text-lg">
-              A comprehensive platform for evaluating Out-Of-Home (OOH) advertising effectiveness. 
-              It ingests massive amounts of spatial data, applies custom ML scoring algorithms, 
-              and serves the insights via a scalable FastAPI backend to an interactive Next.js dashboard.
+              {featured.desc}
             </p>
 
             <div className="flex flex-wrap gap-2 mb-10">
-              {["Python", "FastAPI", "Next.js", "Geospatial Data", "Docker"].map((tag, i) => (
+              {featured.tags && featured.tags.map((tag: string, i: number) => (
                 <span key={i} className="text-sm px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-neutral-300">
                   {tag}
                 </span>
@@ -51,10 +55,10 @@ export default function FeaturedProject() {
             </div>
 
             <div className="flex items-center gap-4 mt-auto">
-              <a href="#" className="flex items-center gap-2 bg-white text-black px-5 py-2.5 rounded-full font-semibold hover:bg-neutral-200 transition-colors">
+              <Link href={`/projects/${featured.slug}`} className="flex items-center gap-2 bg-white text-black px-5 py-2.5 rounded-full font-semibold hover:bg-neutral-200 transition-colors">
                 View Case Study
                 <ArrowUpRight className="w-4 h-4" />
-              </a>
+              </Link>
               <a href="#" className="flex items-center gap-2 px-5 py-2.5 rounded-full font-semibold text-white hover:bg-white/10 transition-colors">
                 <GitBranch className="w-5 h-5" />
                 Source Code

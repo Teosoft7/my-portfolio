@@ -14,23 +14,23 @@ export default function About() {
         <div className="lg:col-span-5 relative group">
           <div className="absolute -inset-4 bg-gradient-to-tr from-blue-500/20 to-purple-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition duration-500"></div>
           <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-white/10 bg-neutral-900">
-            <Image 
-              src="/images/profile.jpg" 
-              alt="Gildong Hong" 
+            <Image
+              src="/images/profile.jpg"
+              alt="Gildong Hong"
               fill
               className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
               sizes="(max-width: 768px) 100vw, 50vw"
             />
             {/* Gradient Overlay for better blending */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-            
+
             <div className="absolute bottom-6 left-6 right-6 flex items-center gap-3">
               <div className="w-10 h-10 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center border border-white/20">
                 <MapPin className="w-5 h-5 text-blue-400" />
               </div>
               <div>
-                <p className="text-white font-medium">Seoul, South Korea</p>
-                <p className="text-sm text-neutral-400">Open to US Relocation</p>
+                <p className="text-white font-medium">Greate Seattle Area</p>
+                <p className="text-sm text-neutral-400">Washington, US</p>
               </div>
             </div>
           </div>
@@ -54,10 +54,10 @@ export default function About() {
           {/* Quick Timeline/Resume */}
           <div>
             <h4 className="text-xl font-semibold text-white mb-6 flex items-center gap-2">
-              <Briefcase className="w-5 h-5 text-purple-400" /> 
+              <Briefcase className="w-5 h-5 text-purple-400" />
               Experience & Education
             </h4>
-            
+
             <div className="space-y-8 border-l border-white/10 ml-3 pl-8 relative">
               {/* Timeline Item 1 */}
               <div className="relative">
@@ -87,7 +87,7 @@ export default function About() {
                   {/* Small icon overlay for education could go here, but a dot is cleaner */}
                 </div>
                 <div className="text-sm text-neutral-500 font-semibold tracking-wide mb-1 flex items-center gap-2">
-                   2015 - 2019
+                  2015 - 2019
                 </div>
                 <h5 className="text-lg font-bold text-white flex items-center gap-2">
                   B.S. in Computer Science
