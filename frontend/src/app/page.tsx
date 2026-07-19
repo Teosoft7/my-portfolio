@@ -3,6 +3,7 @@ import About from "@/components/About";
 import TechStack from "@/components/TechStack";
 import FeaturedProject from "@/components/FeaturedProject";
 import SubProjects from "@/components/SubProjects";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
@@ -30,6 +31,9 @@ export default function Home() {
         
         {/* 4. 부가 프로젝트 & 아티클 (Sub-projects & Writing) */}
         <SubProjects />
+        
+        {/* 5. 연락처 (Contact) */}
+        <Contact />
       </div>
       
       {/* Footer */}

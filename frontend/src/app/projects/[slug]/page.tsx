@@ -3,6 +3,7 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
+import remarkGfm from "remark-gfm";
 
 export async function generateStaticParams() {
   const files = getMdxFiles("projects");
@@ -50,7 +51,14 @@ export default async function ProjectPage({
         </header>
 
         <div className="prose prose-invert prose-blue max-w-none prose-headings:font-bold prose-a:text-blue-400 hover:prose-a:text-blue-300">
-          <MDXRemote source={content} />
+          <MDXRemote 
+            source={content} 
+            options={{
+              mdxOptions: {
+                remarkPlugins: [remarkGfm],
+              },
+            }}
+          />
         </div>
       </div>
     </article>

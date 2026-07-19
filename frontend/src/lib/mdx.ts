@@ -8,6 +8,8 @@ export interface BaseMetadata {
   title: string;
   desc?: string;
   type?: string;
+  featured?: boolean;
+  tags?: string[];
   [key: string]: any;
 }
 
@@ -31,7 +33,7 @@ export function getPostBySlug(dir: string, slug: string) {
   };
 }
 
-export function getAllPosts(dir: string) {
+export function getAllPosts(dir: string): (BaseMetadata & { slug: string })[] {
   const files = getMdxFiles(dir);
 
   const posts = files.map((file) => {
