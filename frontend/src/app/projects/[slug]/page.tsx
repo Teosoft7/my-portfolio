@@ -27,7 +27,7 @@ export default async function ProjectPage({
   const { metadata, content } = post;
 
   return (
-    <article className="min-h-screen bg-black text-white pt-24 pb-12 px-6">
+    <article className="min-h-screen bg-transparent text-white pt-24 pb-12 px-6">
       <div className="max-w-3xl mx-auto">
         <Link href="/#projects" className="inline-flex items-center gap-2 text-neutral-400 hover:text-white mb-8 transition-colors">
           <ArrowLeft className="w-4 h-4" />

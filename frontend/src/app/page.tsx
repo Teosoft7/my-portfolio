@@ -7,7 +7,7 @@ import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black text-white selection:bg-blue-500/30 font-sans">
+    <main className="min-h-screen bg-transparent text-white selection:bg-blue-500/30 font-sans">
       {/* Dynamic Background Elements */}
       <div className="fixed inset-0 z-0 pointer-events-none">
         <div className="absolute top-0 left-0 w-full h-[500px] bg-gradient-to-b from-blue-900/10 to-transparent"></div>

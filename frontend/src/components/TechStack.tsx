@@ -4,7 +4,7 @@ const stacks = [
   {
     category: "Machine Learning",
     icon: <Cpu className="w-6 h-6 text-blue-400" />,
-    items: ["PyTorch", "Scikit-Learn", "TensorFlow"],
+    items: ["PyTorch", "Scikit-Learn", "XGBoost", "LangChain", "ONNX"],
     description: "Developing production-ready ML models and fine-tuning LLMs for real-world AI applications."
   },
   {

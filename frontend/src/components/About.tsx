@@ -42,7 +42,7 @@ export default function About() {
           {/* Bio Text */}
           <div className="space-y-6">
             <h3 className="text-2xl font-bold text-white">
-              Data Scientist & Software Engineer
+              Software Engineer & Data Scientist
             </h3>
             <p className="text-lg text-neutral-400 leading-relaxed font-light">
               Hello! I'm Taeho. I build end-to-end data products—from ETL pipelines and ML models to the APIs and user interfaces that deliver them. My focus is taking data science out of Jupyter notebooks and turning it into scalable, production-grade software.

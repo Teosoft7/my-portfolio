@@ -23,8 +23,8 @@ export default function Navbar({ logoText = "TAEHO JEON" }: NavbarProps) {
 
   const navLinks = [
     { name: "About", href: "#about" },
-    { name: "Projects", href: "#projects" },
     { name: "Skills", href: "#tech-stack" },
+    { name: "Projects", href: "#projects" },
     { name: "Contact", href: "#contact" },
   ];
 

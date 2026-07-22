@@ -3,8 +3,8 @@ import Navbar from "@/components/Navbar";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Data Science Portfolio",
-  description: "My Data Science Portfolio",
+  title: "Taeho's Portfolio",
+  description: "Taeho's Portfolio Projects",
 };
 
 export default function RootLayout({
@@ -14,9 +14,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        <Navbar />
-        {children}
+      <body className="bg-black text-white relative min-h-screen">
+        {/* Fixed Background Image */}
+        <div 
+          className="fixed inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-40 pointer-events-none"
+          style={{ backgroundImage: "url('/images/space_bg.jpg')" }}
+        />
+        {/* Gradient Overlay for better text readability */}
+        <div className="fixed inset-0 z-0 bg-gradient-to-b from-black/30 via-black/60 to-black/80 pointer-events-none" />
+        
+        {/* Main Content */}
+        <div className="relative z-10">
+          <Navbar />
+          {children}
+        </div>
       </body>
     </html>
   );

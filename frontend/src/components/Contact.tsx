@@ -79,11 +79,11 @@ export default function Contact() {
           </p>
 
           <div className="space-y-6">
-            <a href="mailto:hello@example.com" className="group flex items-center gap-4 text-neutral-300 hover:text-white transition-colors w-fit">
+            <a href="mailto:thjeon.wa@gmail.com" className="group flex items-center gap-4 text-neutral-300 hover:text-white transition-colors w-fit">
               <div className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-blue-500/20 group-hover:border-blue-500/30 transition-all">
                 <Mail className="w-5 h-5 group-hover:text-blue-400 transition-colors" />
               </div>
-              <span className="text-lg font-medium">hello@example.com</span>
+              <span className="text-lg font-medium">thjeon.wa@gmail.com</span>
             </a>
 
             <div className="flex items-center gap-4 pt-6">
@@ -92,9 +92,6 @@ export default function Contact() {
               </a>
               <a href="#" className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#0A66C2]/20 hover:border-[#0A66C2]/30 hover:-translate-y-1 transition-all group">
                 <LinkedinIcon className="w-5 h-5 text-neutral-300 group-hover:text-[#0A66C2] transition-colors" />
-              </a>
-              <a href="#" className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#1DA1F2]/20 hover:border-[#1DA1F2]/30 hover:-translate-y-1 transition-all group">
-                <TwitterIcon className="w-5 h-5 text-neutral-300 group-hover:text-[#1DA1F2] transition-colors" />
               </a>
             </div>
           </div>

@@ -4,7 +4,6 @@ export default function Hero() {
   return (
     <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden px-6">
       {/* Background gradients */}
-      <div className="absolute inset-0 bg-background" />
       <div className="absolute -top-[40%] -left-[10%] w-[70%] h-[70%] rounded-full bg-blue-500/10 blur-[120px]" />
       <div className="absolute top-[20%] -right-[10%] w-[60%] h-[60%] rounded-full bg-purple-500/10 blur-[120px]" />
 
@@ -17,8 +16,8 @@ export default function Hero() {
 
         {/* Headline */}
         <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 text-transparent bg-clip-text bg-gradient-to-r from-neutral-100 via-neutral-400 to-neutral-600 drop-shadow-sm">
-          From raw Data  <br className="hidden md:block" />
-          To <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Production</span> software
+          From raw data  <br className="hidden md:block" />
+          To <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">production</span> software
         </h1>
 
         {/* Sub-headline */}
