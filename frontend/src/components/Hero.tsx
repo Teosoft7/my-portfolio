@@ -17,13 +17,13 @@ export default function Hero() {
 
         {/* Headline */}
         <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 text-transparent bg-clip-text bg-gradient-to-r from-neutral-100 via-neutral-400 to-neutral-600 drop-shadow-sm">
-          Bridging the gap between <br className="hidden md:block" />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Data Science</span> & Engineering
+          From raw Data  <br className="hidden md:block" />
+          To <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Production</span> software
         </h1>
 
         {/* Sub-headline */}
         <p className="text-lg md:text-xl text-neutral-400 max-w-2xl mx-auto mb-10 font-light leading-relaxed">
-          I build scalable machine learning pipelines, full-stack data applications, and extract actionable insights to drive business value.
+          Data scientist and engineer building ML pipelines, APIs, and the products on top of them.
         </p>
 
         {/* CTA Buttons */}
